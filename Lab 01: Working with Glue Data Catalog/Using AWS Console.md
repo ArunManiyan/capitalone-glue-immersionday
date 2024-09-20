@@ -31,9 +31,28 @@ We will create one crawlers to crawl 2 data sources each with CSV and JSON folde
   ``` 
   console-lab1
 ```
-  , click Next.
+  , click **Next**.
   
   **4.** On **Choose data sources and classifiers** page, select **Not Yet** under Data source configuration 
   
-  **5.** Click on **Add a data store**, In S3 path browse to ``` s3://${BUCKET_NAME}/input/lab1/csv/``` .
+  **5.** Click on **Add a data store**, In S3 path browse to ```s3://${BUCKET_NAME}/input/lab1/csv/``` .
   Make sure you pick the csv folder rather than the file inside the folder, and then click **Next** and keep rest of the option default
+
+ **6.** Click On **Add an S3 data source**.
+
+ **7.** You will be back on **Choose data sources and classifiers** page again, click on **Add a data sources** and In S3 path browse to ```s3://${BUCKET_NAME}/input/lab5/json/```. Make sure you pick the json folder rather than the file inside the folder,keep rest of the option default and then click **Next**
+
+ **8.** On **Choose an IAM role** page, click **Choose an existing IAM role** and pick the role ```AWSGlueServiceRole-glueworkshop```
+, then click **Next**.
+
+**9.** On **Set output and scheduling** page, under **Output configuration** section, choose ```console_glueworkshop```
+from the Database dropdown list. Enter ``` console_ ```
+as the **Prefix** added to tables (optional) and under **Crawler schedule** keep **On demand frequency**, click **Next**.
+
+**10.** Review all the parameters and click on **Create crawler**.
+
+## Run Crawlers
+
+**11.** Once we have created the crawler, click the check box next to it and choose to run the crawler by clicking the **Run** button at the top of the page. It will take a minute or two for the crawler to finish.
+
+**12.** 
