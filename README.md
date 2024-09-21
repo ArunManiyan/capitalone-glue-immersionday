@@ -1,2 +1,2 @@
 # capitalone-glue-immersionday
-Steps for running the glue immersion day
+In this immersion day we will learning and doing some hands on activities using services like Glue, Step Function and Event Bridge. The immersion day is intent to provide foundation knowledge on AWS services which particapants could leverage to build production workload. The activities are broken up into different labs. Please follow each lab in order as there could be some depednecies for one lab on the prior lab.
