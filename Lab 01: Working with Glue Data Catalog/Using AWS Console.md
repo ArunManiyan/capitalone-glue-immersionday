@@ -15,7 +15,13 @@ Go to the [AWS Glue console](https://console.aws.amazon.com/glue/home) , click *
 
 **1.** Create another database with name ``` console_glueworkshop ``` by clicking **Add Database**.
 
+![Screenshot 2024-09-26 at 1 07 40 PM](https://github.com/user-attachments/assets/d1ee632a-cb35-4b3f-892a-f697ead1bd7d)
+
+
 **2.** Clicking **Create Database**.
+
+![CreateDB2](https://github.com/user-attachments/assets/c8d750cc-77ed-479c-9536-09a4a26779d0)
+
 
 ## Next Step - Create Glue Crawler
 
@@ -24,6 +30,8 @@ We will create one crawlers to crawl 2 data sources each with CSV and JSON folde
 ### Create Crawler
 
   **1.** Click **Crawlers** on the left under **Data Catalog** Section.
+
+  ![Create](https://github.com/ArunManiyan/capitalone-glue-immersionday/blob/main/Lab%2001%3A%20Working%20with%20Glue%20Data%20Catalog/images/CreateDB1.png)
   
   **2.** Click **Create Crawler.**
   
