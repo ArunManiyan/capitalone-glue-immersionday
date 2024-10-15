@@ -1,6 +1,10 @@
 # Working with GLUE ETL
 
-In this lab we will develop, deploy and run spark ETL using the Glue's studio enviornment.
+An AWS Glue job encapsulates a script that connects to your source data, processes it, and then writes it out to your data target. Typically, a job runs extract, transform, and load (ETL) scripts. Jobs can also run general-purpose Python scripts (Python shell jobs.)
+
+You can use scripts that AWS Glue generates, or you can provide your own. Given a source schema and target location or schema, the AWS Glue code generator can automatically create an Apache Spark API (PySpark) script. You can use this script as a starting point and edit it to meet your needs.
+
+For this lab, you are provided with a pyspark script which reads some data from a S3 bucket. We will be importing a custom library which will be used to **derive** the **country code** based on **country name**. The result is further written into a S3 bucket in **CSV** format
 
 ## Developing ETL code
 
@@ -14,7 +18,7 @@ In this lab we will develop, deploy and run spark ETL using the Glue's studio en
 ----------------------------------------------------------------------------------------------------------------
  
 3. Click on **Create script**
-4. Replace the default script with below script
+4. Replace the default script with below script. Line #50 through 55 refers to the custom library that we will be importing
 
 ```
 import sys
