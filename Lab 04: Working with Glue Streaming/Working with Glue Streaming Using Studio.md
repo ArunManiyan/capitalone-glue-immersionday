@@ -1,6 +1,6 @@
 # Working with Glue Streaming
 
-In this lab we will be creating a streaming application using Glue Studio. The AWS account provided to you is already provisioned with a Kensis data stream and catalog entry for the streamed dataset. We can either use catalog table or directly read the data infer schema from the streaming application. In this lab we will try to use the direct read method
+The objective of this lab is to read streamed data from a Kinesis Data Steam using Spark Streaming and write the dataset to a S3 location. The AWS account provided to you is already provisioned with a Kensis data stream and catalog entry for the streamed dataset. We can either use catalog table or directly read the data infer schema from the streaming application. In this lab we will try to use the direct read method
 
 ## Developing the Glue job using Glue Studio
 
