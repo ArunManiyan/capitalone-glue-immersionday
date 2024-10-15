@@ -90,9 +90,9 @@ new_df.write.csv(s3_bucket + "/output/lab2/sales_country/" + job_time_string + "
 
 ```
 5. Rename the job name from **Untitled job** to
-   ```
-   glueworkshop-lab3-etl-job
-   ```
+```
+glueworkshop-lab3-etl-job
+```
  ----------------------------------------------------------------------------------------------------------------
  
 ![lab3-etlname](https://github.com/user-attachments/assets/3e4ea38d-25d5-492a-a2c2-9260a89f937c)
@@ -112,11 +112,9 @@ new_df.write.csv(s3_bucket + "/output/lab2/sales_country/" + job_time_string + "
 
 ----------------------------------------------------------------------------------------------------------------
  
-  **c.** Expand the **Adavanced properties**, scroll down to **Job parameters** section and add a paramenter with **Key**
+  **c.** Expand the **Adavanced properties**, scroll down to **Job parameters** section and add a paramenter with **--s3_bucket** as the **Key** and enter the bucketname from your account in **Value-optional** field
 
-   **--s3_bucket** and enter the bucketname from your account in **Value-optional** field
-
-  **d.** Add another parameter **--extra-py-files** and **s3://{BUCKET_NAME}}/library/pycountry_convert.zip**. Ensure that BUCKET_NAME is updated with your bucket name before running the job
+  **d.** Add another parameter with **--extra-py-files** as the **Key** and **s3://{BUCKET_NAME}}/library/pycountry_convert.zip** as the **Value**. Ensure that **{BUCKET_NAME}** is updated with your bucket name before running the job
 
 ----------------------------------------------------------------------------------------------------------------
  
@@ -130,7 +128,7 @@ new_df.write.csv(s3_bucket + "/output/lab2/sales_country/" + job_time_string + "
 
 ## Running the job
 
-1. Click on the **Run** and click on **Run details** from the top green banner
+1. From the top right corner of window click **Run** and click on **Run details** from the top green banner
 
 ----------------------------------------------------------------------------------------------------------------
  
@@ -141,8 +139,10 @@ new_df.write.csv(s3_bucket + "/output/lab2/sales_country/" + job_time_string + "
  
 2. Wait until the **Run Status** changes from **Running** to **Succeeded**
 
-3. Navigate to the S3 output folder and ensure that the outfile was created.
-  
+3. Navigate to the S3 output folder we provided in the script and ensure that the output file was created.
+
+
+This concludes all steps related to this lab. You can explore more activities from the main immersion day content to use CLI and other method to create and run ETL jobs. 
     
 
    
